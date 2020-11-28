@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>写给江丽的</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+
+<audio controls="controls" autoplay="autoplay">
+	<source src="vdio/周杰伦%20-%20告白气球.flac" type="audio/mpeg" />
+	Your browser does not support the audio element.
+</audio>
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+<!--			<span class="comments">/**</span><br />-->
+			<span>hey 亲爱的江丽!</span><br />
+			<span>我是你的男朋友</span><br />
+			<span>在2020.11.14这个特殊的日子里我们在一起</span><br />
+			<span>其实很早之前我就一直再偷偷喜欢你了，但是我一直没有说，因为我一直琢磨不透你的心思</span><br />
+			<span>所以就一直保持朋友关系，偶尔给你买个小礼物，或者互相帮个忙呀什么的，自己也挺开心 哈哈哈</span><br />
+			<span>直到你那天晚上给我说：你喜欢我，哇，我当时特别激动，甚至手都有一点发抖。真的</span><br />
+			<span>我开心坏了，当时觉得很不真实，所以就问你嘛，还让你发誓(回想起来真的好傻...)</span><br />
+			<span>虽然我们物理上没有在一起，但是这也只是暂时的嘛，是在为了以后美好稳定的生活做奋斗嘛。</span><br />
+			<span>毕竟物质基础是幸福生活的一个保障嘛。</span><br />
+			<span>你一个人在那边要好好注意身体哦，好好吃饭，有什么事情一定要跟我说呀，不要自己生闷气。</span><br />
+			<span>想我的话就给我打电话说，我保证以最快的速度来找你。</span><br />
+			<span>记得按时吃饭，好好爱护你的胃，等我来给你做好吃的哦</span><br />
+			<span>千言万语，也写不出我对你的喜欢。</span><br />
+			<span>最后用一个函数来表达我对你的爱吧：y=x^N (N->∞) x轴代表时间，y轴代表我对你的爱</span>;<br />
+			<span>爱你的明</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					喜欢你呀！江丽。。。
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu"><br/>
+					<div class="signature">- 宁小明</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="copyright">
+		<a href="#">....</a><br />
+		<a href="#">....</a><br />
+		
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+// var together = new Date();
+// together.setFullYear(2013, 2, 28);
+// together.setHours(20);
+// together.setMinutes(0);
+// together.setSeconds(0);
+// together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	// var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+	// document.body.appendChild(msg);
+	// $("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 2000);
+
+	// timeElapse(together);
+	// setInterval(function () {
+	// 	timeElapse(together);
+	// }, 500);
+
+	adjustCodePosition();
+	// $("#code").typewriter();
+}
+</script>
+
+</body>
+</html>
